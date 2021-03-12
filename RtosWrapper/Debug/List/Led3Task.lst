@@ -1,0 +1,218 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.40.2.214/W32 for ARM         12/Mar/2021  20:57:02
+# Copyright 1999-2019 IAR Systems AB.
+#
+#    Cpu mode     =  
+#    Endian       =  little
+#    Source file  =  C:\IAR Proj\RtosWrapper\MyTasks\Led3Task.cpp
+#    Command line =
+#        -f C:\Users\super\AppData\Local\Temp\EW767C.tmp ("C:\IAR
+#        Proj\RtosWrapper\MyTasks\Led3Task.cpp" -lC "C:\IAR
+#        Proj\RtosWrapper\Debug\List" -lA "C:\IAR Proj\RtosWrapper\Debug\List"
+#        -o "C:\IAR Proj\RtosWrapper\Debug\Obj" --no_cse --no_unroll
+#        --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp
+#        --dlib_config D:\Games\IAR\arm\inc\c\DLib_Config_Normal.h -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\" -I "C:\IAR Proj\RtosWrapper\Rtos\wrapper\" -I
+#        "C:\IAR Proj\RtosWrapper\Rtos\wrapper\FreeRtos\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\include\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\portable\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\portable\Common\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\portable\IAR\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\portable\IAR\ARM_CM4F\" -I "C:\IAR
+#        Proj\RtosWrapper\Rtos\FreeRtos\portable\MemMang\" -I "C:\IAR
+#        Proj\RtosWrapper\MyTasks\" -I "C:\IAR Proj\RtosWrapper\Common\" -I
+#        "C:\IAR Proj\RtosWrapper\CMSIS\" -I "C:\IAR
+#        Proj\RtosWrapper\Application\" -I "C:\IAR
+#        Proj\RtosWrapper\Application\Diagnostic\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\GpioPort\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\IrqController\" -I "C:\IAR
+#        Proj\RtosWrapper\..\CortexLib\AbstractHardware\Pin\" -I "C:\IAR
+#        Proj\RtosWrapper\..\CortexLib\AbstractHardware\Registers\STM32F411\FieldValues\"
+#        -I "C:\IAR
+#        Proj\RtosWrapper\..\CortexLib\AbstractHardware\Registers\STM32F411\"
+#        -I "C:\IAR Proj\RtosWrapper\..\CortexLib\AbstractHardware\Registers\"
+#        -I "C:\IAR Proj\RtosWrapper\..\CortexLib\AbstractHardware\Port\" -I
+#        "C:\IAR Proj\RtosWrapper\..\CortexLib\AbstractHardware\Atomic\" -I
+#        "C:\IAR Proj\RtosWrapper\..\CortexLib\Common\" -I "C:\IAR
+#        Proj\RtosWrapper\..\CortexLib\Common\Singleton\" -I "C:\IAR
+#        Proj\RtosWrapper\..\CortexLib\Common\RomObject\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\STM32F411\FieldValues\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\CortexM4\" -I
+#        C:\Users\User\Desktop\RtosWrapper\AHardware\CortexM4\FieldValues\ -I
+#        "C:\IAR Proj\RtosWrapper\AHardware\CortexM4\" -I "C:\IAR
+#        Proj\RtosWrapper\AHardware\STM32F411\" -Ol --c++ --no_exceptions
+#        --no_rtti)
+#    Locale       =  C
+#    List file    =  C:\IAR Proj\RtosWrapper\Debug\List\Led3Task.lst
+#    Object file  =  C:\IAR Proj\RtosWrapper\Debug\Obj\Led3Task.o
+#
+###############################################################################
+
+C:\IAR Proj\RtosWrapper\MyTasks\Led3Task.cpp
+      1          #include "Led3Task.hpp"
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp OsWrapper::TicksPerSecond std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+   \                     _ZNSt6chrono13duration_castINS_8durationIjSt5ratioILx10ELx1000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr3std6chrono12_Is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE: (+1)
+   \        0x0   0xB5E0             PUSH     {R5-R7,LR}
+   \        0x2   0x....'....        BL       _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000EEE5countEv
+   \        0x6   0x220A             MOVS     R2,#+10
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x....'....        BL       __aeabi_ldivmod
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+   \       0x10   0xA901             ADD      R1,SP,#+4
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x....'....        BL       _ZNSt6chrono8durationIjSt5ratioILx10ELx1000EEEC1IjvEERKT_
+   \       0x18   0x9800             LDR      R0,[SP, #+0]
+   \       0x1A   0xBD0E             POP      {R1-R3,PC}       ;; return
+
+   \                                 In section .text, align 2
+   \   __code __interwork __vfp std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+   \                     _ZNSt6chrono8durationIjSt5ratioILx10ELx1000EEEC1IjvEERKT_: (+1)
+   \        0x0   0x6809             LDR      R1,[R1, #+0]
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp __int64_t std::chrono::duration<__int64_t, std::milli>::count() const
+   \                     _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000EEE5countEv: (+1)
+   \        0x0   0xE9D0 0x0100      LDRD     R0,R1,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp uint32_t std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+   \                     _ZNKSt6chrono8durationIjSt5ratioILx10ELx1000EEE5countEv: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_steady
+   \                     _ZNSt6chrono12system_clock9is_steadyE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::system_clock::is_monotonic
+   \                     _ZNSt6chrono12system_clock12is_monotonicE:
+   \        0x0   0x00               DC8 0
+
+   \                                 In section .rodata, align 1
+   \   __absolute bool const std::chrono::steady_clock::is_steady
+   \                     _ZNSt6chrono12steady_clock9is_steadyE:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::RtosWrapper::wSleep(uint32_t)
+   \                     _ZN9OsWrapper11RtosWrapper6wSleepEj: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x....'....        BL       vTaskDelay
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 2
+   \   __interwork __vfp void OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+   \                     _ZN9OsWrapper7IThread5SleepENSt6chrono8durationIxSt5ratioILx1ELx1000EEEE: (+1)
+   \        0x0   0xB583             PUSH     {R0,R1,R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+   \        0x4   0xA802             ADD      R0,SP,#+8
+   \        0x6   0x....'....        BL       _ZNSt6chrono13duration_castINS_8durationIjSt5ratioILx10ELx1000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr3std6chrono12_Is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0x....'....        BL       _ZNKSt6chrono8durationIjSt5ratioILx10ELx1000EEE5countEv
+   \       0x12   0x....'....        BL       _ZN9OsWrapper11RtosWrapper6wSleepEj
+   \       0x16   0xB005             ADD      SP,SP,#+20
+   \       0x18   0xBD00             POP      {PC}             ;; return
+      2          #include <gpiocregisters.hpp>  // for GPIOA
+
+   \                                 In section .text, align 4
+   \   __interwork __vfp void RegisterBase<1073874964U, 32U, ReadWriteMode>::Toggle<ReadWriteMode, void>(uint32_t)
+   \                     _ZN12RegisterBaseILj1073874964ELj32E13ReadWriteModeE6ToggleIS0_vEEvj: (+1)
+   \        0x0   0x4902             LDR.N    R1,??Toggle_0    ;; 0x40020814
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4050             EORS     R0,R0,R2
+   \        0x6   0x6008             STR      R0,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+   \        0xA   0xBF00             Nop      
+   \                     ??Toggle_0:
+   \        0xC   0x4002'0814        DC32     0x40020814
+      3          
+
+   \                                 In section .text, align 4, keep-with-next
+      4          void Led3Task::Execute()
+      5          {
+   \                     _ZN8Led3Task7ExecuteEv: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+      6            for(;;)
+      7            {
+      8              GPIOC::ODR::Toggle(1 << 5);
+   \                     ??Execute_1: (+1)
+   \        0x2   0x2020             MOVS     R0,#+32
+   \        0x4   0x....'....        BL       _ZN12RegisterBaseILj1073874964ELj32E13ReadWriteModeE6ToggleIS0_vEEvj
+   \        0x8   0x4A02             LDR.N    R2,??Execute_0
+   \        0xA   0xE9D2 0x0100      LDRD     R0,R1,[R2, #+0]
+      9              
+     10              Sleep(300ms);
+   \        0xE   0x....'....        BL       _ZN9OsWrapper7IThread5SleepENSt6chrono8durationIxSt5ratioILx1ELx1000EEEE
+   \       0x12   0xE7F6             B.N      ??Execute_1
+   \                     ??Execute_0:
+   \       0x14   0x....'....        DC32     ?_0
+     11            }
+     12          };
+
+   \                                 In section .rodata, align 8
+   \                     ?_0:
+   \        0x0   0x0000'0000'0      DC64 300
+   \              000'012C     
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Led3Task::Execute()
+         8   -> OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+         8   -> RegisterBase<1073874964U, 32U, ReadWriteMode>::Toggle<ReadWriteMode, void>(uint32_t)
+      24   OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+        24   -> OsWrapper::RtosWrapper::wSleep(uint32_t)
+        24   -> std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+        24   -> std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+       8   OsWrapper::RtosWrapper::wSleep(uint32_t)
+         8   -> vTaskDelay
+       0   RegisterBase<1073874964U, 32U, ReadWriteMode>::Toggle<ReadWriteMode, void>(uint32_t)
+       0   std::chrono::duration<__int64_t, std::milli>::count() const
+       0   std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+       0   std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+      16   std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+        16   -> std::chrono::duration<__int64_t, std::milli>::count() const
+        16   -> std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+        16 __aeabi_ldivmod
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?_0
+      24  Led3Task::Execute()
+      26  OsWrapper::IThread::Sleep(std::chrono::milliseconds)
+       8  OsWrapper::RtosWrapper::wSleep(uint32_t)
+      16  RegisterBase<1073874964U, 32U, ReadWriteMode>::Toggle<ReadWriteMode, void>(uint32_t)
+       6  std::chrono::duration<__int64_t, std::milli>::count() const
+       4  std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::count() const
+       6  std::chrono::duration<uint32_t, std::ratio<10LL, 1000LL>>::duration<uint32_t, void>(uint32_t const &)
+      28  std::chrono::duration_cast<OsWrapper::TicksPerSecond, __int64_t, std::milli>(std::chrono::duration<__int64_t, std::milli> const &)
+       1  std::chrono::steady_clock::is_steady
+       1  std::chrono::system_clock::is_monotonic
+       1  std::chrono::system_clock::is_steady
+     132  -- Other
+
+ 
+ 143 bytes in section .rodata
+ 118 bytes in section .text
+ 
+ 24 bytes of CODE  memory (+  94 bytes shared)
+  8 bytes of CONST memory (+ 135 bytes shared)
+
+Errors: none
+Warnings: none

@@ -1,0 +1,4 @@
+irqcontroller.pbi: \
+  C:\Users\User\Desktop\RtosWrapper\AHardware\IrqController\irqcontroller.cpp \
+  C:\Users\User\Desktop\RtosWrapper\AHardware\IrqController/irqcontroller.hpp \
+  C:\Users\User\Desktop\RtosWrapper\AHardware\IrqController/../../Application/userbutton.hpp
